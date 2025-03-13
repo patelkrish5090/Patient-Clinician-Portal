@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+body {
+  background-color: #1a202c; /* Dark background */
+  color: #e2e8f0; /* Light text */
+}
+
+/* Fade transition styles */
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+/* Optional: Add custom card styles if needed */
+.card {
+  @apply bg-gray-800 p-4 rounded-lg shadow-lg;
+}
